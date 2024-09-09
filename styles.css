@@ -81,6 +81,19 @@ body,html {
     width: 500px;
 }
 
+.hero-section button {
+    border-radius: 15px;
+    border: none;
+    background-color: #c49b00;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right:10px;
+    padding-left:10px;
+}
+
 @media only screen and (max-width: 768px) {
     /* Styles for devices with screen width of 768px or less (like tablets and mobile phones) */
     .navigation{
@@ -122,13 +135,13 @@ body,html {
         justify-content: center;
     }
     .hero-section .section-title{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 36px;
         font-weight: bold;
         text-align: center;
     }
     .hero-section .section-text {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-align: center;
     }
 }
