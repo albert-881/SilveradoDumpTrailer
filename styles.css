@@ -80,6 +80,10 @@ body,html {
     height:auto;
     width: 500px;
 }
+.hero-section .section-text {
+    width:50vw;
+    line-height: 1.6;
+}
 
 .hero-section button {
     border-radius: 15px;
