@@ -1,0 +1,134 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+} 
+
+.header{
+    width: 100vw;
+}
+
+.top {
+    width:100vw;
+    height:20px;
+    background-color: #c49b00;
+}
+
+.navigation {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    height:60px;
+}
+
+
+
+.navigation .title {
+    color:#c49b00;
+    margin-left:20px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+.navi-buttons {
+    margin-right:20px;
+}
+
+.navi-buttons button {
+    background: none;
+    border: none;
+    color: white; /* Set the text color */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline if any */
+    border-bottom: 2px solid transparent; /* Add bottom border initially transparent */
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-left:20px;
+    
+}
+
+.navi-buttons button:hover {
+    border-bottom: 2px solid #c49b00; /* Line color on hover */
+}
+
+.hero-section{
+    height:auto;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section .first-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.first-section .section-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.second-section img{
+    height:auto;
+    width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for devices with screen width of 768px or less (like tablets and mobile phones) */
+    .navigation{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+        gap:10px;
+    }
+
+    .navi-buttons{
+        margin-bottom: 20px;
+        display:flex;
+        flex-direction: column;
+    }
+    .navigation .title{
+        margin-top:20px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .second-section img {
+        width: 100%;
+        max-width: 300px; /* You can adjust this */
+        height: auto; /* Automatically adjusts height to keep aspect ratio */
+    }
+
+    .hero-section .first-section{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-section .section-title{
+        margin-bottom: 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .hero-section .section-text {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
