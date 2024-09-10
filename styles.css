@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto', sans-serif;
+        font-family: 'Impact', sans-serif;  
 }
 
 body,html {
@@ -23,7 +23,7 @@ body,html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: rgb(47, 47, 47);
     height:60px;
 }
 
@@ -98,6 +98,61 @@ body,html {
     padding-left:10px;
     cursor: pointer;
 }
+
+
+
+.service-header{
+    background-color:rgb(47, 47, 47);
+    padding:10px;
+}
+
+.service-header .title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+}
+
+.service-body {
+    display:flex;
+    gap:5px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height:600px;
+    background: linear-gradient(to bottom, #c49b00 10%, rgb(47, 47, 47) 100%);
+
+
+}
+.information {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(47, 47, 47);
+}
+
+.boxes {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:40px;
+}
+
+.service-body img {
+    width: 70px;
+    height:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     /* Styles for devices with screen width of 768px or less (like tablets and mobile phones) */
