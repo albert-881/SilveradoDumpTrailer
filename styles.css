@@ -25,6 +25,7 @@ body,html {
     flex-wrap: wrap;
     background-color: rgb(47, 47, 47);
     height:60px;
+    
 }
 
 
@@ -139,7 +140,6 @@ body,html {
     display:flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .service-body img {
@@ -173,6 +173,52 @@ body,html {
     justify-content: center;
 }
 
+
+.quote-section {
+    padding: 20px;
+    background: linear-gradient(to bottom, #fbad17 10%, rgb(47, 47, 47) 100%); /* Optional: Light background to stand out */
+    text-align: center;
+  }
+  
+  .quote-section h2 {
+    color: #333;
+  }
+  
+  #quote-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #quote-form label {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  #quote-form input,
+  #quote-form select,
+  #quote-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #quote-form button {
+    padding: 12px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #quote-form button:hover {
+    background-color: #ffcc00; /* Darker yellow on hover */
+  }
+  
 
 
 
@@ -244,5 +290,48 @@ body,html {
         margin-top: 20px;
     }
 
-    
+    #quote-form {
+        width: 90%; /* Form takes up most of the screen width */
+        margin: 0 auto; /* Centers the form horizontally */
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Adds space between the form elements */
+        padding: 20px; /* Adds padding around the form for better spacing */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+        background-color: #fff; /* Background color for contrast */
+        border-radius: 8px; /* Slight rounding of the form edges */
+    }
+
+    #quote-form label {
+        font-size: 16px; /* Adjust font size for readability on mobile */
+        text-align: left; /* Keep labels aligned to the left */
+    }
+
+    #quote-form input,
+    #quote-form select,
+    #quote-form textarea {
+        width: 100%; /* Input fields take up full width of form container */
+        padding: 12px; /* More padding inside inputs for touch-friendliness */
+        font-size: 16px; /* Larger font for easier typing */
+        border: 1px solid #ccc; /* Subtle border for form fields */
+        border-radius: 5px; /* Slight rounding of input fields */
+    }
+
+    #quote-form textarea {
+        resize: vertical; /* Allows textarea to resize only vertically */
+    }
+
+    #quote-form button {
+        padding: 12px; /* More padding for larger touch targets */
+        font-size: 18px; /* Slightly larger font for button text */
+        background-color: yellow;
+        color: black;
+        border: none;
+        border-radius: 5px; /* Slight rounding for buttons */
+        cursor: pointer;
+    }
+
+    #quote-form button:hover {
+        background-color: #ffcc00; /* Darker yellow on hover */
+    }
 }
