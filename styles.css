@@ -14,7 +14,7 @@ body,html {
 .top {
     width:100vw;
     height:20px;
-    background-color: #c49b00;
+    background-color: #fbad17;
 }
 
 .navigation {
@@ -30,10 +30,11 @@ body,html {
 
 
 .navigation .title {
-    color:#c49b00;
+    color:#fbad17;
     margin-left:20px;
     margin-right: 20px;
     font-size: 24px;
+    text-align: center;
 }
 .navi-buttons {
     margin-right:20px;
@@ -54,7 +55,7 @@ body,html {
 }
 
 .navi-buttons button:hover {
-    border-bottom: 2px solid #c49b00; /* Line color on hover */
+    border-bottom: 2px solid #fbad17; /* Line color on hover */
 }
 
 .hero-section{
@@ -88,7 +89,7 @@ body,html {
 .hero-section button {
     border-radius: 15px;
     border: none;
-    background-color: #c49b00;
+    background-color: #fbad17;
     color: black;
     font-size: 24px;
     font-weight: bold;
@@ -99,7 +100,9 @@ body,html {
     cursor: pointer;
 }
 
-
+.services-section{
+    width:100vw;
+}
 
 .service-header{
     background-color:rgb(47, 47, 47);
@@ -115,12 +118,13 @@ body,html {
 
 .service-body {
     display:flex;
+    flex-wrap: wrap;
     gap:5px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100vw;
     height:600px;
-    background: linear-gradient(to bottom, #c49b00 10%, rgb(47, 47, 47) 100%);
+    background: linear-gradient(to bottom, #fbad17 10%, rgb(47, 47, 47) 100%);
 
 
 }
@@ -128,13 +132,14 @@ body,html {
     width: 300px;
     height: 400px;
     background-color: rgb(47, 47, 47);
+    border-radius: 10px;
 }
 
 .boxes {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top:40px;
+    
 }
 
 .service-body img {
@@ -142,6 +147,31 @@ body,html {
     height:auto;
 }
 
+.service-text .title {
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding:10px;
+}
+
+.service-text .text {
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding:10px;
+    line-height: 1.6;
+}
+
+.text3 .text {
+    margin-top: 40px;
+}
+
+.service-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -196,7 +226,7 @@ body,html {
     }
     .hero-section .section-title{
         margin-bottom: 20px;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: bold;
         text-align: center;
     }
@@ -205,4 +235,14 @@ body,html {
         text-align: center;
         width: 60vw;
     }
+
+    .service-body{
+        height:auto;
+        
+    }
+    .boxes {
+        margin-top: 20px;
+    }
+
+    
 }
