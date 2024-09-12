@@ -223,7 +223,13 @@ body,html {
     color: yellow;
 }
 
-
+.translate-button {
+    background-color: #fbad17;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 
 
@@ -341,7 +347,6 @@ body,html {
 
     #message-status {
         color: goldenrod;
-        background-color: ;
     }
     
 }

@@ -19,23 +19,103 @@ document.getElementById('quote-form').addEventListener('submit', function(event)
 
 
 const navigator = document.querySelector('.navi-buttons');
+const serviceSection = document.querySelector('.services-section');
+const quoteSection = document.querySelector('.quote-section');
 navigator.addEventListener('click', (e) => {
     let buttonid = e.target.id;
     
     switch(buttonid){
       case 'service':
-        const serviceSection = document.querySelector('.services-section');
         serviceSection.scrollIntoView({behavior:'smooth'});
         break;
 
       case 'quote':
-        const quoteSection = document.querySelector('.quote-section');
         quoteSection.scrollIntoView({behavior:'smooth'});
         break;
     } 
     
 });
 
+const quoteHero = document.querySelector('.quoteHero-button');
+quoteHero.addEventListener('click', (e) => {
+  quoteSection.scrollIntoView({behavior:'smooth'});
+}); 
+
+let currLang = 'en'
+const translateBtn = document.querySelector('.translate-button');
+translateBtn.addEventListener('click', (e) => {
+  if (currLang == 'en') {
+    // Header Section
+    const sectionTitle = document.querySelector('.section-title');
+    sectionTitle.textContent = 'Soluciones de transporte en las que puede confiar';
+
+    const sectionText = document.querySelector('.section-text');
+    sectionText.textContent = 'Nos enorgullece ofrecer servicios de remolque de alta calidad que se ajusten a sus necesidades. Desde sitios de construcción hasta proyectos en el hogar, lo tenemos cubierto. ¿Necesita una solución de remolque rápida y confiable? No busque más. Nuestros remolques están listos cuando los necesite, sin complicaciones ni demoras.';
+
+    const getQuoteBtn = document.querySelector('.section-button button');
+    getQuoteBtn.textContent = '¡Solicite una cotización!';
+
+    // Translate Navigation
+    document.querySelector('#about').textContent = 'Sobre Nosotros';
+    document.querySelector('#service').textContent = 'Servicios';
+    document.querySelector('#gallery').textContent = 'Galería';
+    document.querySelector('#quote').textContent = 'Solicitar Cotización';
+    document.querySelector('#contact').textContent = 'Contacto';
+
+    // Services Section
+    document.querySelector('.service-header .title').textContent = 'Nuestros Servicios';
+    
+    // Service 1
+const serviceTitle1 = document.querySelector('.text1 .title');
+serviceTitle1.textContent = 'Servicio de Dejar y Recoger Remolque';
+
+const serviceText1 = document.querySelector('.text1 .text');
+serviceText1.textContent = 'Te dejamos el remolque en tu casa o trabajo, lo llenas a tu tiempo, y luego lo recogemos. No te preocupes por el transporte, nosotros nos encargamos.';
+
+// Service 2
+const serviceTitle2 = document.querySelector('.text2 .title');
+serviceTitle2.textContent = 'Transporte de Materiales';
+
+const serviceText2 = document.querySelector('.text2 .text');
+serviceText2.textContent = 'Te ayudamos a mover tus materiales o equipo de un lugar a otro de manera segura y rápida.';
+
+// Service 3
+const serviceTitle3 = document.querySelector('.text3 .title');
+serviceTitle3.textContent = 'Renta de Remolques';
+
+const serviceText3 = document.querySelector('.text3 .text');
+serviceText3.textContent = 'Renta un remolque para tu proyecto. Nosotros lo traemos y lo llevamos cuando termines.';
+
+
+    // Quote Section
+    document.querySelector('#get-quote h2').textContent = 'Solicitar Cotización';
+    document.querySelector('#get-quote p').textContent = 'Complete el siguiente formulario y nos pondremos en contacto con usted con una cotización personalizada para sus necesidades.';
+
+    document.querySelector('label[for="from_name"]').textContent = 'Nombre Completo:';
+    document.querySelector('label[for="email"]').textContent = 'Dirección de Correo Electrónico:';
+    document.querySelector('label[for="phone"]').textContent = 'Número de Teléfono:';
+    document.querySelector('label[for="service"]').textContent = 'Seleccione un Servicio:';
+
+    const serviceOptions = document.querySelectorAll('#service option');
+    serviceOptions[0].textContent = 'Servicio de Entrega y Recogida de Remolques';
+    serviceOptions[1].textContent = 'Servicio de Transporte de Materiales';
+    serviceOptions[2].textContent = 'Alquiler de Remolque de Volteo';
+
+    document.querySelector('label[for="message"]').textContent = 'Información Adicional:';
+    document.querySelector('.quote-button').textContent = 'Enviar';
+    
+    const messagePlaceholder = document.querySelector('#message');
+    messagePlaceholder.placeholder = 'Cuéntanos más sobre lo que necesitas...';
+
+    // Change Button Text to English
+    translateBtn.textContent = 'English?';
+
+    currLang = 'sp';
+  } else {
+    currLang = 'en';
+    window.location.reload(); // Reset to English by refreshing
+  }
+});
 
 
 
