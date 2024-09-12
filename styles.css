@@ -219,7 +219,9 @@ body,html {
     background-color: #ffcc00; /* Darker yellow on hover */
   }
   
-
+#message-status {
+    color: yellow;
+}
 
 
 
@@ -244,12 +246,10 @@ body,html {
     .navi-buttons{
         margin-bottom: 20px;
         display:flex;
-        
+        flex-direction: column;
     }
 
-    .navi-buttons button{
-        display:flex;
-    }
+    
     .navigation .title{
         margin-top:20px;
     }
@@ -338,4 +338,10 @@ body,html {
     #quote-form button:hover {
         background-color: #ffcc00; /* Darker yellow on hover */
     }
+
+    #message-status {
+        color: goldenrod;
+        background-color: ;
+    }
+    
 }

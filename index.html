@@ -21,11 +21,11 @@
         <div class="navigation">
             <div class="title">Silverado Dump Trailer Service & Construction</div>
             <div class='navi-buttons'>
-                <button>About Us</button>
-                <button>Services</button>
-                <button>Gallery</button>
-                <button>Get a Quote</button>
-                <button>Contact</button>
+                <button id="about">About Us</button>
+                <button id="service">Services</button>
+                <button id="gallery">Gallery</button>
+                <button id="quote">Get a Quote</button>
+                <button id="contact">Contact</button>
             </div>
         </div>
     </div>
@@ -107,8 +107,10 @@
       
           <label for="message">Additional Information:</label>
           <textarea id="message" name="message" rows="4" placeholder="Let us know more about your needs..."></textarea>
-      
+        
+          <div id="message-status"></div>
           <button type="submit" class="quote-button">Submit</button>
+         
         </form>
       </section>
       
