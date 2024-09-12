@@ -246,6 +246,10 @@ body,html {
         display:flex;
         
     }
+
+    .navi-buttons button{
+        display:flex;
+    }
     .navigation .title{
         margin-top:20px;
     }
