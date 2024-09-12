@@ -238,13 +238,13 @@ body,html {
         justify-content: center;
         align-items: center;
         height:auto;
-        gap:10px;
+        gap:20px;
     }
 
     .navi-buttons{
         margin-bottom: 20px;
         display:flex;
-        flex-direction: column;
+        
     }
     .navigation .title{
         margin-top:20px;
