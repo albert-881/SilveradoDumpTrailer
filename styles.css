@@ -54,7 +54,7 @@ body,html {
     border-bottom: 2px solid transparent; /* Add bottom border initially transparent */
     transition: border-color 0.3s ease; /* Smooth transition for hover effect */
     margin-left:20px;
-    
+    white-space: nowrap;
 }
 
 .navi-buttons button:hover {
