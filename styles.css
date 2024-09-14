@@ -70,7 +70,8 @@ body,html {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 20px;
+    align-items: flex-end;
+    margin-right: 20px;
 }
 
 .first-section .section-title {
@@ -86,6 +87,7 @@ body,html {
     width:50vw;
     line-height: 1.6;
     font-family: 'Times New Roman', Times, serif;
+    text-align: end;
 }
 
 .hero-section button {
@@ -272,12 +274,13 @@ body,html {
 
     .second-section img {
         width: 100%;
-        max-width: 300px; /* You can adjust this */
+        max-width: 280px; /* You can adjust this */
         height: auto; /* Automatically adjusts height to keep aspect ratio */
+        
     }
 
     .hero-section .first-section{
-        margin-top: 20px;
+       
         display: flex;
         flex-direction: column;
         align-items: center;
