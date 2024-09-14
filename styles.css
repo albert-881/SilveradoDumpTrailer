@@ -41,11 +41,13 @@ body,html {
     margin-right:30px;
 }
 
+
 .navi-buttons button {
     background: none;
     border: none;
     color: white; /* Set the text color */
-    font-size: 16px; /* Adjust font size as needed */
+    font-size: 20px; /* Adjust font size as needed */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     cursor: pointer;
     text-decoration: none; /* Remove underline if any */
@@ -77,6 +79,7 @@ body,html {
 .first-section .section-title {
     font-size: 50px;
     font-weight: bold;
+    text-align: end;
 }
 
 .second-section img{
@@ -85,9 +88,10 @@ body,html {
 }
 .hero-section .section-text {
     width:50vw;
-    line-height: 1.6;
-    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.4;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: end;
+    font-size: 22px;
 }
 
 .hero-section button {
@@ -95,7 +99,7 @@ body,html {
     border: none;
     background-color: #fbad17;
     color: black;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -183,10 +187,16 @@ body,html {
     padding: 20px;
     background: linear-gradient(to bottom, #fbad17 10%, rgb(47, 47, 47) 100%); /* Optional: Light background to stand out */
     text-align: center;
+    
+  }
+
+  label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .quote-section h2 {
     color: #333;
+    font-size: 40px;
   }
   
   #quote-form {
@@ -272,6 +282,10 @@ body,html {
         align-items: center;
     }
 
+    .hero-section button{
+        font-size:24px;
+    }
+
     .second-section img {
         width: 100%;
         max-width: 280px; /* You can adjust this */
@@ -296,8 +310,12 @@ body,html {
         margin-bottom: 20px;
         text-align: center;
         width: 60vw;
+        font-size:16px;
     }
-
+    
+    .first-section .section-button{
+        margin-bottom: 20px;
+    }
     .service-body{
         height:auto;
         
