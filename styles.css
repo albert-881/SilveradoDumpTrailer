@@ -39,10 +39,6 @@ body,html {
 }
 .navi-buttons {
     margin-right:30px;
-    max-width: 100%;
-    overflow-x: auto; /* Optional: adds horizontal scroll if needed */
-      
-      
 }
 
 
@@ -188,7 +184,7 @@ body,html {
 
 
 .quote-section {
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(to bottom, #fbad17 10%, rgb(47, 47, 47) 100%); /* Optional: Light background to stand out */
     text-align: center;
     
@@ -248,6 +244,7 @@ body,html {
     font-size: 24px;
     border-radius: 10px;
     cursor: pointer;
+    color:black;
 }
 
 
@@ -274,7 +271,7 @@ body,html {
         
     }
     .navi-buttons button{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     
