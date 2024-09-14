@@ -24,7 +24,7 @@ body,html {
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(47, 47, 47);
-    height:60px;
+    height:auto;
     
 }
 
@@ -85,6 +85,7 @@ body,html {
 .hero-section .section-text {
     width:50vw;
     line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero-section button {
@@ -124,7 +125,9 @@ body,html {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height:600px;
+    height:auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: linear-gradient(to bottom, #fbad17 10%, rgb(47, 47, 47) 100%);
 
 
@@ -252,7 +255,7 @@ body,html {
     .navi-buttons{
         margin-bottom: 20px;
         display:flex;
-        flex-direction: column;
+        
     }
 
     
