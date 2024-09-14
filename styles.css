@@ -269,6 +269,9 @@ body,html {
         display:flex;
         
     }
+    .navi-buttons button{
+        font-size: 15px;
+    }
 
     
     .navigation .title{
