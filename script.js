@@ -21,6 +21,7 @@ document.getElementById('quote-form').addEventListener('submit', function(event)
 const navigator = document.querySelector('.navi-buttons');
 const serviceSection = document.querySelector('.services-section');
 const quoteSection = document.querySelector('.quote-section');
+const aboutSection = document.querySelector('.about-us');
 navigator.addEventListener('click', (e) => {
     let buttonid = e.target.id;
     
@@ -32,6 +33,10 @@ navigator.addEventListener('click', (e) => {
       case 'quote':
         quoteSection.scrollIntoView({behavior:'smooth'});
         break;
+      
+        case 'about':
+          aboutSection.scrollIntoView({behavior:'smooth'});
+          
     } 
     
 });
