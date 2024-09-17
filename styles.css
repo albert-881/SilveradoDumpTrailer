@@ -62,6 +62,7 @@ body,html {
 }
 
 .hero-section {
+    width: 100vw;
     height: 70vh; /* Full screen height for immersive effect */
     background: linear-gradient(135deg, #d3d3d3, #bcbaba, #868585); 
     display: flex;
@@ -72,12 +73,13 @@ body,html {
 
 .hero-section .first-section {
     display: flex;
-    gap:50px;
+    gap:10px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     margin-right: 20px;
     animation: fadeIn 1.5s ease-in-out; /* Fading in the content */
+    
 }
 
 .first-section .section-title {
@@ -122,7 +124,7 @@ body,html {
 
 .second-section img {
     height: auto;
-    width: 500px;
+    width: 40vw;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.05); /* Slight zoom for a more dynamic look */
@@ -169,7 +171,9 @@ body,html {
     }
 }
 
-
+.second-section{
+    align-self: center;
+}
 .services-section{
     width:100vw;
 }
