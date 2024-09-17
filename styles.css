@@ -61,37 +61,84 @@ body,html {
     border-bottom: 2px solid #fbad17; /* Line color on hover */
 }
 
-.hero-section{
-    height:auto;
+.hero-section {
+    height: 70vh; /* Full screen height for immersive effect */
     background: linear-gradient(135deg, #d3d3d3, #bcbaba, #868585); 
     display: flex;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-section .first-section{
-    display:flex;
+.hero-section .first-section {
+    display: flex;
+    gap:50px;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
     margin-right: 20px;
+    animation: fadeIn 1.5s ease-in-out; /* Fading in the content */
 }
 
 .first-section .section-title {
     font-size: 50px;
     font-weight: bold;
     text-align: end;
+    color:black;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1.5s ease-in-out forwards; /* Slide-in text */
 }
 
-.second-section img{
-    height:auto;
-    width: 500px;
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 .hero-section .section-text {
-    width:50vw;
+    width: 50vw;
     line-height: 1.4;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: end;
     font-size: 22px;
+    color: white;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.second-section img {
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slight zoom for a more dynamic look */
+    opacity: 0;
+    animation: imageFadeIn 2s ease-in-out forwards;
+}
+
+@keyframes imageFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
 }
 
 .hero-section button {
@@ -101,12 +148,27 @@ body,html {
     color: black;
     font-size: 36px;
     font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right:10px;
-    padding-left:10px;
+    padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
+
+.hero-section button:hover {
+    background-color: #ffcb42; /* Brighter hover effect */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .services-section{
     width:100vw;
@@ -247,6 +309,43 @@ body,html {
     color:black;
 }
 
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 30px 0; /* Adds padding for spacing */
+    background: linear-gradient(to bottom, #fbad17 10%, rgb(47, 47, 47) 100%);
+     /* Text color contrast */
+}
+
+.about-us .title {
+    font-size: 48px; /* Increased for better readability */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us .text {
+    width: 60vw; /* Slightly wider for better spacing */
+    text-align: center;
+    line-height: 1.8; /* Reduced line height for cleaner text block */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px; /* Increased font size for readability */
+    margin-bottom: 30px; /* Space between text and image */
+    color:white;
+}
+
+.about-us .text p {
+    margin: 15px 0; /* Adds margin between paragraphs */
+}
+
+.about-us img {
+    width: 350px; /* Slightly larger image */
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the image */
+}
 
 
 
@@ -284,6 +383,7 @@ body,html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: auto;
     }
 
     .hero-section button{
@@ -292,9 +392,11 @@ body,html {
 
     .second-section img {
         width: 100%;
-        max-width: 280px; /* You can adjust this */
+        max-width: 200px; /* You can adjust this */
         height: auto; /* Automatically adjusts height to keep aspect ratio */
         
+       
+        box-shadow: none;
     }
 
     .hero-section .first-section{
@@ -303,6 +405,7 @@ body,html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap:0px;
     }
     .hero-section .section-title{
         margin-bottom: 20px;
@@ -377,4 +480,7 @@ body,html {
         color: goldenrod;
     }
     
+    .about-us .text{
+        font-size:14px ;
+    }
 }
