@@ -372,7 +372,7 @@ body,html {
 
 .contact-info a {
     color: #fbad17;
-    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .contact-info a:hover {
