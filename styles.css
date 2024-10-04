@@ -294,6 +294,7 @@ body,html {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 30px;
   }
   
   #quote-form button:hover {
@@ -407,8 +408,12 @@ body,html {
     font-size: 12px;
 }
 
-
-
+.facebook-insta{
+    background-color: #ffcb42;
+    color: black;
+    border-radius: 5px;
+    padding:5px;
+}
 
 
 

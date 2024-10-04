@@ -22,6 +22,7 @@ const navigator = document.querySelector('.navi-buttons');
 const serviceSection = document.querySelector('.services-section');
 const quoteSection = document.querySelector('.quote-section');
 const aboutSection = document.querySelector('.about-us');
+const contactSection = document.querySelector('.footer');
 navigator.addEventListener('click', (e) => {
     let buttonid = e.target.id;
     
@@ -34,8 +35,11 @@ navigator.addEventListener('click', (e) => {
         quoteSection.scrollIntoView({behavior:'smooth'});
         break;
       
-        case 'about':
-          aboutSection.scrollIntoView({behavior:'smooth'});
+      case 'about':
+        aboutSection.scrollIntoView({behavior:'smooth'});
+        
+      case 'contact':
+        contactSection.scrollIntoView({behavior:'smooth'});
           
     } 
     
@@ -111,6 +115,12 @@ serviceText3.textContent = 'Renta un remolque para tu proyecto. Nosotros lo trae
     
     const messagePlaceholder = document.querySelector('#message');
     messagePlaceholder.placeholder = 'Cuéntanos más sobre lo que necesitas...';
+
+    const aboutTitle = document.querySelector('#aboutus-title');
+    aboutTitle.textContent = 'Sobre Nosotros';
+
+    const aboutText = document.querySelector('#aboutus-text');
+    aboutText.textContent = 'En Silverado Dump Trailer Service & Construction, nos enorgullecemos de ser una empresa local familiar en Brownsville, Texas. Nos especializamos en ofrecer servicios de remolques volquete confiables y sin complicaciones, adaptados a sus necesidades. Ya sea que esté buscando alquilar un remolque para su proyecto o necesite transportar materiales, lo tenemos cubierto. Nuestro objetivo es brindar un servicio excepcional con un toque personal, garantizando que su proyecto se desarrolle sin problemas de principio a fin.'
 
     // Change Button Text to English
     translateBtn.textContent = 'English?';
