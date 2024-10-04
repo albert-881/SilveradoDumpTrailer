@@ -67,7 +67,7 @@ translateBtn.addEventListener('click', (e) => {
     // Translate Navigation
     document.querySelector('#about').textContent = 'Sobre Nosotros';
     document.querySelector('#service').textContent = 'Servicios';
-    document.querySelector('#gallery').textContent = 'Galería';
+    
     document.querySelector('#quote').textContent = 'Solicitar Cotización';
     document.querySelector('#contact').textContent = 'Contacto';
 
